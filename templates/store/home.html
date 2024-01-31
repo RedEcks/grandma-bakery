@@ -9,9 +9,8 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="h1 fw-bold">Welcome to Grandma's Bakery</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
-          etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <h1 class="h1 fw-bold">Welcome!</h1>
+        <p class="lead text-muted"> Delight your taste buds with a delectable array of pastries and freshly baked goods, all available at your fingertips. Crafted with a touch of warmth and sweetness, our virtual store brings the charm of Grandma's kitchen to your doorstep. From the flakiness of pastries to the aroma of freshly baked treats, each product is a testament to our commitment to quality and authenticity. Indulge in the simplicity of online shopping without compromising on the rich, homemade flavors that Grandma's Bakery is known for. Join us in savoring moments of joy, one delightful bite at a time.</p>
         <p>
           <a href="#" class="btn btn-primary my-2">Make an account</a>
         </p>
@@ -22,7 +21,7 @@
   <div class="album py-5 bg-light">
     <div class="container">
 
-      <div class="pb-3 h5">All Selections</div>
+      <div class="pb-3 h5">All Books</div>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
 
         {% for product in products %}
@@ -35,6 +34,7 @@
                 <a class="text-dark text-decoration-none" href="{{ product.get_absolute_url }}">{{ product.title }}</a>
               </p>
               <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9min read</small>
               </div>
             </div>
           </div>
